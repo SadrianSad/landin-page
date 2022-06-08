@@ -70,7 +70,7 @@ section {
 }
 /*header*/
 header {
-	background: url('/img/koldra-obciazeniowa.jpg') center/cover;
+	background: url('../img/koldra-obciazeniowa.jpg') center/cover;
 	height: 100vh;
 }
 header h2 {
