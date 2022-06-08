@@ -1,0 +1,214 @@
+/*
+font-family: 'League Spartan', sans-serif;*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--mainColor: #f5f5f5;
+	--primaryColor: #52525b;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 2.4rem;
+	font-family: 'League Spartan', sans-serif;
+}
+
+h1 {
+	font-weight: 600;
+	font-size: 6.4rem;
+}
+h2 {
+	font-weight: 500;
+	font-size: 3.6rem;
+	margin-bottom: 40px;
+}
+img {
+	max-width: 100%;
+}
+
+ul,
+ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+p {
+	line-height: 1.025;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+	text-decoration: none;
+}
+
+.btn-cta {
+	margin-top: 30px;
+	transition: color 0.3s, background-color 0.3s;
+	display: inline-block;
+	background-color: var(--primaryColor);
+	color: #fff;
+	padding: 0.775em 2em;
+	border-radius: 8px;
+	font-size: 2.1rem;
+}
+.btn-cta:hover {
+	color: #fff;
+	background-color: #000;
+}
+
+section {
+	padding-block: 1.5em;
+}
+/*header*/
+header {
+	background: url('/img/koldra-obciazeniowa.jpg') center/cover;
+	height: 100vh;
+}
+header h2 {
+	font-size: 3.2rem;
+	font-weight: 600;
+}
+
+/*benefits*/
+.benefits {
+	position: relative;
+	z-index: 1;
+	padding-bottom: 6em;
+}
+
+.benefits li::marker {
+	content: url('/img/stars.svg');
+}
+.benefits ul {
+	margin-block: 30px;
+	padding-left: 30px;
+}
+.benefits li {
+	padding-left: 10px;
+}
+/*abouts*/
+.abouts {
+	background-color: var(--primaryColor);
+}
+.abouts img {
+	position: absolute;
+	left: -15%;
+	top: 50%;
+	transform: translatey(-50%);
+}
+.abouts p {
+	text-align: right;
+	color: #fff;
+}
+.abouts p:first-child {
+	margin-bottom: 0.9em;
+}
+.position {
+	position: relative;
+}
+.abouts a {
+	color: var(--primaryColor);
+	background-color: #fff;
+}
+
+/*experience*/
+.experience {
+	position: relative;
+	z-index: 5;
+	padding-block: 5em;
+}
+
+/*products*/
+.products {
+	background-color: var(--primaryColor);
+	padding-block: 4em;
+}
+.products-boxes {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+	gap: 35px;
+}
+.product {
+	gap: 60px;
+	border: 5px solid #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 1em 0.5em 0;
+	text-transform: uppercase;
+}
+.product img {
+	align-self: flex-start;
+}
+.products h2 {
+	color: #fff;
+}
+h3 {
+	font-size: 2rem;
+	text-align: right;
+	color: #fff;
+	font-weight: 600;
+}
+.others-text {
+	font-size: 1.8rem;
+}
+.others li {
+	line-height: 0.8em;
+	font-size: 1.6rem;
+}
+
+@media (max-width: 992px) {
+	body {
+		font-size: 2.2rem;
+	}
+	h1 {
+		font-size: 5rem;
+	}
+	h2 {
+		font-size: 3rem;
+	}
+	.btn-cta {
+		font-size: 1.6rem;
+	}
+	.product {
+		gap: 40px;
+	}
+	h3 {
+		font-size: 1.8rem;
+	}
+	.abouts img {
+		position: static;
+		left: 0;
+		top: 0;
+		transform: translatey(0);
+		margin-bottom: 30px;
+	}
+	.position {
+		position: static;
+	}
+}
+@media (max-width: 576px) {
+	h1 {
+		font-size: 4.6rem;
+	}
+	h2 {
+		font-size: 2.6rem;
+	}
+	section {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.btn-cta {
+		width: 100%;
+		text-align: center;
+	}
+}
