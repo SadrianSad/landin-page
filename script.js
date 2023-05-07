@@ -1,3 +1,9 @@
+AOS.init({
+	startEvent: 'DOMContentLoaded',
+	offset: 200,
+	once: true,
+})
+
 const footerYear = document.querySelector('.footer__year')
 const handleCurrentYear = () => {
 	const year = new Date().getFullYear()
@@ -24,10 +30,4 @@ addEventListener('DOMContentLoaded', () => {
 		})
 	}
 	addClass()
-})
-
-AOS.init({
-	startEvent: 'DOMContentLoaded',
-	offset: 200,
-	once: true,
 })
