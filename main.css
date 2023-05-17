@@ -843,6 +843,33 @@ div.box .button:hover {
 	cursor: pointer;
 }
 
+/* polityka */
+.privacys {
+	margin-top: 20px;
+	text-align: right;
+}
+.privacy a {
+	color: black;
+}
+
+.privacy h3 {
+	text-align: left;
+	margin-top: 20px;
+}
+
+.privacy .bi {
+	color: var(--main-color);
+	padding-right: 10px;
+}
+
+.back {
+	margin-top: 20px;
+}
+.mb-6 {
+	padding-bottom: 20px;
+	text-align: left;
+}
+
 @media (max-width: 992px) {
 	.aria-title {
 		font-size: 2.2rem;
@@ -1077,5 +1104,13 @@ div.box .button:hover {
 	.back-up .bi {
 		bottom: 40px;
 		right: 30px;
+	}
+
+	.privacy h2 {
+		font-size: 1.2rem;
+	}
+
+	.privacy li {
+		padding: 0;
 	}
 }
